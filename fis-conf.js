@@ -1,7 +1,7 @@
 // 加 md5
-fis.match('*.{js,css,png}', {
-  useHash: true
-});
+// fis.match('*.{js,css,png}', {
+//   useHash: true
+// });
 
 
 fis.match('app.less', {
