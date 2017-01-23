@@ -1,15 +1,551 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>云商直播</title>
-    <link rel="stylesheet" href="/dist/css/app.css" type="text/css" />
-  </head>
-  <body>
-    <div id="studio">
-    	
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="css/app.less">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body >
+    <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="navbar">
+        <ul class="navbar-nav">
+            <a class="navbar-brand left" href="/index.html"><img src="img/logo.png"></a>
+            <li class="menuItem js-nav left"><a href="#feature">直播服务</a></li>
+            <li class="menuItem js-nav left"><a href="#plugin">功能组件</a></li>
+            <li class="menuItem js-nav left"><a href="#scene">适用场景</a></li>
+            <li class="menuItem js-nav left"><a href="#case">成功案例</a></li>
+            <!--<li class="menuItem left"><a href="#demo5">服务优势</a></li>-->
+            <li class="menuItem js-nav left"><a href="#price">购买套餐</a></li>
+            <li class="menuItem js-nav left"><a href="#contact">联系我们</a></li>
+        </ul>
     </div>
-    <script src="/dist/vender.js"></script>
-    <script src="/dist/app.js"></script>
-  </body>
+
+
+    <div id="banner" class="banner">
+        <ul class="reset">
+            <li style="background-image: url('http://ys.icloudinn.com/img/1.jpg')"></li>
+            <li style="background-image: url('http://ys.icloudinn.com/img/2.jpg')"></li>
+            <li style="background-image: url('http://ys.icloudinn.com/img/3.jpg')"></li>
+            <li style="background-image: url('http://ys.icloudinn.com/img/4.jpg')"></li>
+        </ul>
+    </div>
+
+
+    <div id="feature"  class="block">
+        <div class="row12 head">
+            <h2 class="title">直播服务</h2>
+            <p class="desc">将价值传播更远,让营销更方便</p>
+        </div>
+        
+        <div class="row12 feature-box">
+            <div class="feature-item item1">
+                <div class="mask"></div>
+                <div class="text">
+                    <h4>企业直播</h4>
+                    <p>搭建企业自有的直播间，真实还原活动场景，扩大活动效果。</p>
+                </div>
+            </div>
+            <div class="feature-item item2">
+                <div class="mask"></div>
+                <div class="text">
+                    <h4>全场景直播服务</h4>
+                    <p>适用于各种应用场景，分享、互动、购物尽在其中。</p>
+                </div>
+            </div>
+            <div class="feature-item item3">
+                <div class="mask"></div>
+                <div class="text">
+                    <h4>行业场景开发定制</h4>
+                    <p>有效针对各行各业需要，定制开发营销直播间。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--功能组件-->
+    <div id="plugin" class="block">
+        <div class="row12 head">
+            <h2 class="title">营销组件</h2>
+            <p class="desc">多种功能，满足各项需要</p>
+        </div>
+    </div>
+
+    <!--典型场景-->
+    <div id="scene" class="block">
+        <div class="row12 head">
+            <h2 class="title">适用场景</h2>
+            <p class="desc">适应企业各种需求</p>
+        </div>
+    </div> 
+
+    <!--成功案例-->
+    <div id="case" class="block">
+        <div class="row12 head">
+            <h2 class="title">成功案例</h2>
+            <!--<p class="desc">覆盖多个行业</p>-->
+        </div>
+        <div class=" case-box js-tabs">
+            <ul class="tabs-header">
+                <li><a href="#tabs-1" title="">会议</a></li>
+                <li><a href="#tabs-2" title="">教育</a></li>
+                <li><a href="#tabs-3" title="">汽车</a></li>
+                <li><a href="#tabs-4" title="">地产</a></li>
+                <li><a href="#tabs-5" title="">金融</a></li>
+            </ul>
+            <div id="tabs-container">
+                <div id="tabs-1" class="tabs-page">
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                </div>
+                <div id="tabs-2" class="tabs-page">
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb2.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb2.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb2.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb2.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb2.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb2.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb2.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb2.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                </div>
+                <div id="tabs-3" class="tabs-page">
+                    
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb3.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb3.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb3.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb3.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb3.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb3.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb3.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb3.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                </div>
+                <div id="tabs-4" class="tabs-page">
+                    
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb3.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb3.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb3.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb3.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb3.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb3.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb3.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb3.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                </div>
+                <div id="tabs-5" class="tabs-page">
+                    
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb3.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb3.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb3.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb3.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb3.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb3.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb3.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                    <div class="tabs-item">
+                        <!--显示的图片-->
+                        <img class="thumb" src="img/thumb3.jpg">
+                        <!--鼠标滑过显示的二维码-->
+                         <img class="qrcode" src="img/qrcode.png">
+                        <p class="title">新郎新娘 </p> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+    
+    <!--报价-->
+    <div id="price" class="block">
+        <div class="row12 head">
+            <h2 class="title">套餐报价</h2>
+            <p class="desc">按量计费，适用不同需求用户</p>
+        </div>
+        <div class="row12 price-box">
+            <div class="price-item item1">
+                <div class="mask">
+                    <h3>分钟计费</h3>
+                    <p>适合低频次，在线人数多的直播活动</p>
+                </div>
+                <div class="text">
+                    <h4>￥1200<span>起</span></h4>
+                    <li>4小时包场直播</li>
+                    <li>支持200位观众同时观看</li>
+                    <li>每位观众的成本仅6元/4小时</li>
+                    <li>可灵活增加并发数</li>
+                    <button class="payBtn">了解详情</button>
+                </div>
+            </div>
+            <div class="price-item item2">
+                <div class="mask">
+                    <h3>分钟计费</h3>
+                    <p>适合低频次，在线人数多的直播活动</p>
+                </div>
+                <div class="text">
+                    <h4>￥1200<span>起</span></h4>
+                    <li>4小时包场直播</li>
+                    <li>支持200位观众同时观看</li>
+                    <li>每位观众的成本仅6元/4小时</li>
+                    <li>可灵活增加并发数</li>
+                    <button class="payBtn">了解详情</button>
+                </div>
+            </div>
+            <div class="price-item item3">
+                <div class="mask">
+                    <h3>分钟计费</h3>
+                    <p>适合低频次，在线人数多的直播活动</p>
+                </div>
+                <div class="text">
+                    <h4>￥1200<span>起</span></h4>
+                    <li>4小时包场直播</li>
+                    <li>支持200位观众同时观看</li>
+                    <li>每位观众的成本仅6元/4小时</li>
+                    <li>可灵活增加并发数</li>
+                    <button class="payBtn">了解详情</button>
+                </div>
+            </div>
+            <div class="price-item item4">
+                <div class="mask">
+                    <h3>分钟计费</h3>
+                    <p>适合低频次，在线人数多的直播活动</p>
+                </div>
+                <div class="text">
+                    <h4>￥1200<span>起</span></h4>
+                    <li>4小时包场直播</li>
+                    <li>支持200位观众同时观看</li>
+                    <li>每位观众的成本仅6元/4小时</li>
+                    <li>可灵活增加并发数</li>
+                    <button class="payBtn">了解详情</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--联系我们-->
+    <div id="contact"  class="block">
+        <div class="row12 head">
+            <h2 class="title">联系我们</h2>
+            <p class="desc">请留下您的需求</p>
+        </div> 
+         <div class="row12 contact-box">
+             <form class="js-form contac-form">
+                 <div class="form-group">
+                     <label>您的称呼</label>
+                    <input type="text" name="usr" >
+                 </div>
+                 <div class="form-group">
+                     <label>联系方式</label>
+                    <input type="text" name="usr" >
+                 </div>
+                 <div class="form-group">
+                     <label>需求描述</label>
+                     <textarea></textarea>
+                 </div>
+                 <div class="submit">提交</div>
+             </form>
+         </div>
+    </div>
+    
+    <!--地图-->
+    <div id="map">
+        <div id="container" style="width:100%; height:550px"></div>
+        <div class="contact">
+            <p><span>地址:</span>海南省海口市美兰区演丰镇西河路红树林创新创业服务中心1001房</p>
+            <p><span>QQ:</span>2129482215</p>
+            <p><span>邮箱:</span>kenny@icloudinn.com</p>
+        </div>
+    </div>
+
+    
+
+     <!--底部-->
+    <div id="footer" class="block">
+        <div class="row12">
+            <div class="left foot-l">
+                <img src="img/yyzb.png">
+                <img src="img/ysfz.png">
+            </div>
+            <div class="left foot-m">
+                <h3>联系我们<div class="hr"></div></h3>
+                <p class="address">CopyRight © 2016-2020 海南云宿乡土旅游发展有限公司 All Rights Reserved.</p>
+                <p><span>QQ:</span>2129482215</p>
+                <p><span>邮箱:</span>kenny@icloudinn.com</p>
+                <p><span>地址:</span>海南省海口市美兰区演丰镇西河路红树林创新创业服务中心1001房</p>
+            </div>
+            <div class="left foot-r">
+                <h3>二维码<div class="hr"></div></h3>
+                <img src="img/qrcode.png">
+                <img src="img/qrcode.png">
+            </div>
+        </div>
+    </div>
+
+<script src="js/vendor/jquery-1.9.0.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+    (function (d, t) {
+        var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g, s)
+    } (document, 'script'));
+</script>
+</body>
+
 </html>

@@ -1,0 +1,568 @@
+@import './normalize.less';
+@import './main.less';
+@import './slide.less';
+
+@color:#333333;
+@light-blue: #58B7FF;
+@blue:#20A0FF;
+@dark-blue:#1D8CE0;
+@light-gray:#d3d3d3;
+@bg-gray:#eaecef;
+
+html,body{
+    width: 100%;
+    overflow-x: hidden;
+}
+body{
+    font-family: '微软雅黑',Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: @color;
+}
+a{
+    text-decoration: none;
+    color: @color;
+    &:hover{
+        color: #222222;
+    }
+}
+li{
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 500;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.reset{
+    margin:0;
+    padding: 0;
+}
+
+.row12{
+    width: 1200px;
+    margin: 0 auto;
+}
+.full-page{
+    width: 100%;
+}
+
+.center{
+    text-align: center;
+}
+
+
+//通用设置
+.block{
+    padding: 60px 0;
+    .head{
+        .center;
+        h2.title{
+            .reset;
+            font-size: 28px;
+            color: @blue;
+        }
+        p.desc{
+            color: @light-blue;
+        }
+    }
+}
+// 联系我们
+#contact{
+    .contact-box{
+
+       .contac-form{
+            width: 650px;
+            margin:0 auto 20px;
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px solid @light-gray;
+            text-align: left;
+
+           .form-group{
+               
+               margin:10px 0;
+               label{
+                   width: 80px;
+                   height: 45px;
+                   line-height: 45px;
+                   margin-right: 10px;
+                   display: inline-block;
+                   text-align: right;
+               }
+               input{
+                   width: 500px;
+                   
+                   height: 45px;
+                   line-height: 45px;
+                   border: 0;
+                   border-bottom: 1px solid @light-gray;
+               }
+               textarea{
+                   width: 500px;
+                   height: 200px;
+                   margin-top:10px;
+                   border-color:  @light-gray;
+               }
+           }
+           .submit{
+               width: 50px;
+               height: 35px;
+               margin:0 auto;
+               text-align: center;
+               line-height: 35px;
+                padding: 0 25px;
+               background: @blue;
+               color: white;
+                border-radius: 5px; 
+           }
+       } 
+    }
+}
+
+
+
+// 底部
+#footer{
+    background: #3d3f42;
+    overflow: hidden;
+    color: white;
+    font-size: 14px;
+    padding: 40px 0;
+    .row12{
+        overflow: hidden;
+    }
+    h3{
+        .reset;
+        font-size: 16px;
+        position: relative;
+        padding: 0 0 15px 0;
+        border-bottom: 1px solid #333333;
+    }
+    .hr{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 40px;
+        height: 2px;
+        background: #757575;
+    }
+    .foot-l{
+        width: 200px;
+        img{
+            width: 200px;
+            display: block;
+            margin:0 0  15px 0;
+        }
+    }
+    .foot-m{
+        width: 550px;
+        margin:0 40px 0 40px;
+        
+        p{
+            position: relative;
+            padding-left: 40px;
+            margin:5px 0;
+            line-height: 1.4;
+            span{
+                position: absolute;
+                left:0;
+                width: 40px;
+                text-align: left;
+            }
+        }
+        .address{
+            padding: 0;
+        }
+    }
+    .foot-r{
+        width: 210px;
+       
+        img{
+            padding: 5px 0 ;
+            width: 100px;
+            height: 100px;
+            margin-right: 5px;
+            float: left;
+        }
+
+    }
+}
+
+// 地图
+#map{
+    position: relative;
+    .contact{
+        padding: 25px 15px;
+        width: 400px;
+        height: 200px;
+        background: rgba(255, 255,255,0.9);
+        position: absolute;
+        top: 100px;
+        left: 300px;
+        p{
+            position: relative;
+            padding-left: 45px;
+            margin:5px 0;
+            line-height: 1.4;
+            span{
+                position: absolute;
+                left:0;
+                width: 40px;
+                text-align: right;
+            }
+        }
+    }
+}
+
+
+// 套餐报价
+#price{
+    background: @bg-gray;
+    .head{
+        h2.title{
+            
+        }
+        p.desc{
+            
+        }
+    }
+    .price-box{
+        margin-top: 30px;
+        display: flex;
+        .price-item{
+            flex:1;
+            margin: 0 15px 0 0 ;
+            border-radius: 6px;
+            border:1px solid @bg-gray;
+            overflow: hidden;
+            .mask{
+                
+                padding: 20px 30px;
+                color: white;
+                h3{
+                    .reset;
+                    font-weight: bold;
+                    font-size: 21px;
+                }
+                p{
+                    .reset;
+                    margin-top: 15px;
+                }
+            }
+            .text{
+                background: white;
+                padding: 15px 25px;
+                text-align: center;
+                h4{
+                    .reset;
+                    margin: 0 0 15px 0;
+                    font-size: 48px;
+                    text-align: left;
+                    // font-weight: bold;
+                    span{
+                        margin-left: 5px;
+                        font-size: 16px;
+                        font-weight: normal;
+                    }
+                }
+                li{
+                    // list-style: square;
+                    // line-height: 1.4;
+                    background: url('../img/square.png') no-repeat left center;
+                    background-size: 10px;
+                    padding-left: 18px;
+                    text-align: left;
+                    margin: 8px 0;
+                }
+                button.payBtn{
+                    width: 158px;
+                    height: 42px;
+                    margin:35px auto;
+                    border-radius: 25px;
+                    background: none;
+                    color: #20a0ff;
+                    border: 1px #20a0ff solid;
+                }   
+            }
+            
+        }
+        .item1 .mask{
+            background: #62a8e9;
+        }
+        .item2 .mask{
+            
+            background: #a27bde;
+        }
+        .item3 .mask{
+            
+            background: #766ae5;
+        }
+        .item4 .mask{
+            
+            background: #62a8e9;
+        }
+        
+    }
+    
+}
+
+//服务优势
+#scene{
+    background: @bg-gray;
+    height: 600px;
+}
+
+// 成功案例 
+
+#case{
+
+    .case-box{
+        position: relative;
+        margin:20px auto;
+        
+        .tabs-header{
+            .reset;
+            display: block;
+            margin:0 auto 10px;
+            width: 550px;
+            overflow: hidden;
+            li{
+                .reset;
+                float: left;
+                margin-right: 10px;
+                a{
+                    display: block;
+                    padding: 5px;
+                    width: 78px;
+                    text-align: center;
+                    border:1px solid #888888;
+                    border-radius: 4px;
+                    &:hover{
+                        border:1px solid @light-blue;
+                    color:@blue;
+                    }
+                }
+                .tabulous_active{
+                    border:1px solid @light-blue;
+                    color:@blue;
+                }
+            }
+        }
+        #tabs-container{
+            position: relative;
+            height: 568px;
+            width:1410px;
+            margin:0 auto;
+            .tabs-page{
+
+                overflow: hidden;
+                .tabs-item{
+                    float: left;
+                    position: relative;
+                    margin: 10px 15px 5px 0; 
+                    width: 220px;
+                    cursor:pointer;
+                    border-radius: 6px;
+                    box-sizing: border-box;
+                    border:1px solid @light-gray;
+                    box-shadow: 3px 3px 3px @light-gray;
+                    overflow: hidden;
+                    &:hover{
+                       .qrcode{
+                           z-index: 2;
+                       } 
+                    }
+                    .thumb{
+                        width: 220px;
+                        height: 240px;
+                    }
+                    .qrcode{
+                        position: absolute;
+                        width: 150px;
+                        height: 150px;
+                        top:45px;
+                        left:45px;
+                        z-index: -1;
+                    }
+                    .title{
+                        .reset;
+                        margin:5px 0;
+
+                        text-align: center;
+
+                    }
+                }
+            }
+        }
+
+
+    }
+
+}
+
+
+//功能组件
+#plugin{
+    // background: #a0a3e5;
+    min-height: 400px;
+}
+
+//直播服务
+#feature{
+    background: @bg-gray;
+
+    .head{
+        .center;
+        h2.title{
+            .reset;
+        }
+        p.desc{
+
+        }
+    }
+    .feature-box{
+        display: flex;
+        box-sizing: border-box;
+        margin-top:30px;
+        padding: 0 50px;
+        
+        .feature-item{
+            flex: 1;
+            margin: 0 25px;
+            .mask{
+                background-repeat: no-repeat;
+                height: 200px;
+                background-position: center;
+            }
+            .text{
+                
+                height: 120px;
+                padding: 10px;
+                background: white;
+                text-align: center;
+                line-height: 1.4;
+                h4{
+                    .reset;
+                    font-weight: bold;
+                }
+                p{
+                    text-align: left;
+                }
+            }
+        }
+
+        .item1{
+            background: #7c81ec;
+           .mask{
+                background-image: url(../img/feature1.png)
+            }
+        }
+
+        .item2{
+            background: #5ac1e7;
+            .mask{
+                background-image: url(../img/feature2.png) 
+            }  
+        }
+
+        .item3{
+            background: #ec8c7c;
+            .mask{
+              background-image: url(../img/feature3.png)
+           }
+        }
+    }
+}
+
+// 幻灯片
+.banner { 
+    position: relative; 
+    overflow: hidden;
+    ul{
+
+        li{ 
+            display: block;
+            height: 550px; 
+            
+            float: left; 
+            background-position: center;
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+        }
+    }
+    .dots{
+        .reset;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        text-align: center;
+        li{
+            width: 50px;
+            cursor: pointer;
+            padding: 5px 0 15px;
+            display: inline-block;
+            margin-right: 10px;
+            border-top:2px solid white;
+            text-indent: -999em;
+        }
+        li.active{
+             border-top:2px solid @blue;
+        }
+    }
+}
+
+/* 固定菜单栏 */
+.navbar{
+    overflow: hidden;
+    width: 100%;
+    background: #8492A6;
+    position: relative;
+    z-index: 99;
+    .navbar-nav{
+        .reset;
+        margin:0 auto;
+        width:1100px;
+        overflow: hidden;
+        .navbar-brand{
+            height: 50px;
+            line-height: 50px;
+            display: block;
+            text-align: center;
+            img{
+                height: 36px;
+                padding: 8px 15px;
+            }
+
+        }
+        li.menuItem{
+            text-align: center;
+            // background: #475669;
+            a{
+                width: 90px;
+                height: 50px;
+                line-height: 50px;
+                display: block;
+                color: white;
+            }
+            &:hover{
+                background: @dark-blue;
+            }
+            
+        }
+        li.active{
+            background: @blue;
+        }
+
+    }
+}
+
+
+
