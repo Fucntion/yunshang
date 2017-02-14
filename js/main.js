@@ -3,7 +3,9 @@ $(function () {
         keys: true,               //  Enable keyboard (left, right) arrow shortcuts
         dots: true,               //  Display dot navigation
         // fluid: true              //  Support responsive design. May break non-responsive designs
+        delay: 100000
     });
+
     $(document).ready( function() {
      $('.navbar').stickUp({
             parts: {
@@ -21,6 +23,40 @@ $(function () {
 
 })
 
+//功能组件
+$(function(){
+    
+	$('.plugin-cover').hover(function(){
+        $('.js-cover').show()
+    },function(){
+        $('.js-cover').hide()
+    })
+
+	$('.plugin-advert').hover(function(){
+        $('.js-advert').show()
+    },function(){
+        $('.js-advert').hide()
+    })
+
+	$('.plugin-menu').hover(function(){
+        $('.js-menu').show()
+    },function(){
+        $('.js-menu').hide()
+    })
+
+	$('.plugin-im').hover(function(){
+        $('.js-im').show()
+    },function(){
+        $('.js-im').hide()
+    })
+
+	$('.plugin-show').hover(function(){
+        $('.js-show').show()
+    },function(){
+        $('.js-show').hide()
+    })
+
+});
 
 // 案例
 $(function(){

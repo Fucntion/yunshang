@@ -315,7 +315,14 @@ h6 {
 //服务优势
 #scene {
     background: @bg-gray;
-    height: 600px;
+    // height: 600px;
+    .scene-box{
+      margin: 30px auto 40px; 
+      text-align: center;
+      img{
+          width: 1000px;
+      } 
+    }
 }
 
 // 成功案例 
@@ -356,22 +363,22 @@ h6 {
         }
         #tabs-container {
             position: relative;
-            height: 568px;
-            width: 1410px;
+            height: 660px;
             margin: 0 auto;
             .tabs-page {
-
+                padding: 0 100px;
                 overflow: hidden;
                 .tabs-item {
                     float: left;
+                    background: #ececec;
                     position: relative;
-                    margin: 10px 15px 5px 0;
+                    margin: 15px;
                     width: 220px;
-                    cursor: pointer;
-                    border-radius: 6px;
+                    height: 300px;
+                    // cursor: pointer;
+                    padding: 5px;
+                    border-radius: 3px;
                     box-sizing: border-box;
-                    border: 1px solid @light-gray;
-                    box-shadow: 3px 3px 3px @light-gray;
                     overflow: hidden;
                     &:hover {
                         .qrcode {
@@ -379,24 +386,36 @@ h6 {
                         }
                     }
                     .thumb {
-                        width: 220px;
-                        height: 240px;
+                        width: 210px;
+                        height: 210px;
                     }
                     .qrcode {
                         position: absolute;
                         width: 150px;
                         height: 150px;
-                        top: 45px;
-                        left: 45px;
+                        top: 35px;
+                        left: 35px;
                         z-index: -1;
                     }
                     .title {
-                        .reset;
-                        margin: 5px 0;
 
-                        text-align: center;
+                        margin: 5px 0; 
+                        h3{
+                            .reset;
+                            font-size: 18px;
+                             margin: 5px 0;
+                            font-weight: 500;
+                            color: black;
+                        }
+                        // text-align: center;
+                        .desc{
+                            .reset;
+                            margin: 5px 0;
+                            color: gray;
+                        }
 
                     }
+                    
                 }
             }
         }
@@ -410,25 +429,79 @@ h6 {
     background: #a0a3e5;
     min-height: 400px;
     .plugin-box {
+
         overflow: hidden;
         box-sizing: border-box;
-        padding: 0 100px;
+        padding: 0 60px;
         .mobile {
 
-            width: 322px;
-            height: 647px;
+            width: 352px;
+            height: 678px;
             box-sizing: border-box;
-            padding: 67px 20px 80px;
+            padding: 64px 20px 116px 50px;
             background: url('../img/mobile.png');
             background-size: 100% 100%;
-            .mask{
+            position: relative;
+           
+            
+            .default{
+                background-image: url('../img/default.png');
                 position: absolute;
-                left:0;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                    background: url('../img/mask.png') no-repeat,rgba(0, 0,0, 0.4);
+                background-size: 100% 100%;
+                width: 282px;
+                height: 498px;
+                 .mask{
+                    position: absolute;
+                    left:0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: 2;
+                    background: rgba(0, 0,0,0.1); 
+                }
+                .flash{
+                    background-size: 100% 100%;
+                    width: 282px;
+                    position: absolute;
+                    z-index: 3;
+                    
+                }
+                .advert{
+                    height: 56px;
+                    top: 206px;
+                    background-image: url('../img/advert.gif');
+                    display: none;
+                }
+                .show{
+                    height: 235px;
+                    bottom: 0;
+                    background-image: url('../img/show.gif');
+                    display: none;   
+                }
+                .community{
+                    height: 235px;
+                    bottom: 0;
+                    background-image: url('../img/community.gif');
+                    display: none;   
+                }
+                .menu{
+                    height: 235px;
+                    bottom: 0;
+                    background-image: url('../img/menu.gif');
+                    display: none;   
+                }
             }
+
+            .cover{  
+                width: 282px;
+                height: 498px;
+                position: absolute;
+                display: none;
+                background-size: cover;
+                background-repeat:no-repeat;
+                background-image: url('../img/cover.jpg');  
+            }
+            
             
         }
         
@@ -611,15 +684,10 @@ h6 {
     position: relative;
     overflow: hidden;
     ul {
-
+        height: 550px;
         li {
-            display: block;
             height: 550px;
-
-            float: left;
             background-position: center;
-            background-size: 100% auto;
-            background-repeat: no-repeat;
         }
     }
     .dots {
