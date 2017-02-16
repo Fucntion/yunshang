@@ -11,8 +11,8 @@
 
 body,
 html {
-    width: 100%;
-    overflow-x: hidden;
+    // width: 100%;
+    // overflow-x: hidden;
 }
 body {
     font-family: '微软雅黑',Arial, Helvetica, sans-serif;
@@ -682,11 +682,13 @@ h6 {
 // 幻灯片
 .banner {
     position: relative;
-    overflow: hidden;
+    overflow: auto;
     ul {
-        height: 550px;
+        list-style: none;
         li {
-            height: 550px;
+            display: block;
+            float: left;
+            min-height: 550px;
             background-position: center;
         }
     }
